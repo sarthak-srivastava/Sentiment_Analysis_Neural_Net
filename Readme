@@ -1,0 +1,6 @@
+## Sentiment Analysis on test data
+- Training is based on the pos.txt and neg.txt files.
+- First, our data is in language/word format, not numerical form, which we need be converted to a vector of features.
+- Second realization: our texts may not be the same length of words or characters.
+- One option we have is to compile a list of all unique words in the training set. Let's say that's 3,500 unique words. These words are our lexicon.We check to see if a given input word of a text is in our unique word vector. If so, the index value of that word in the unique word index is set to 1 in the training vector. This is a very simple bag-of-words model.
+-Now, the features are feeded to the the neural network line by line for the positive and negative data.
